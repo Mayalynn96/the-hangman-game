@@ -132,10 +132,11 @@ document.addEventListener("keydown", keydownAction);
 
 function keydownAction(event) {
     key = event.key.toLowerCase();
-    letterEl.textContent = key;
-    if(timeLeft < 120 || timeLeft > 0) {
+    if(timeLeft >= 60 || timeLeft <= 0 || !maskedWord.includes("_")) {
+        return;
+    } else {
+        letterEl.textContent = key;
         letterUsed();
         return letterInWord();
     }
 }
-
