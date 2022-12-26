@@ -4,30 +4,61 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(assets/images/galaxy.png);
+    background-repeat: no-repeat;
+    background-color: #1B2432;
+    background-size: 110%;
+    background-position: center;
+}
+
 header {
+    color: #121420;
     text-align: center;
     padding-top: 20px;
     height: 20vh;
+    /* background-image: url(assets/images/other-background.png);
+    background-position: bottom center; */
+}
+header h1 {
+    padding: 10px;
+    background-color: white;
+    opacity: 70%;
 }
 
 main {
     text-align: center;
     height: 65vh;
+    color: #121420;
+}
+
+#play {
+    background-color: white;
+    padding: 10px;
+    opacity: 70%;
 }
 
 #start {
-    font-size: 20px;
+    border-radius: 10px;
+    font-size: 40px;
     padding: 5px;
     margin: 30px;
+    background-color: white;
+    opacity: 70%;
+    color: #121420;
 }
 
 section {
+    opacity: 70%;
+    /* border-radius: 20px; */
     display: flex;
     justify-content: center;
-    width: 80vw;
-    height: 40vh;
+    width: 100vw;
+    height: 30vh;
     margin: auto;
-    border: 3px solid black;
+    /* border: 5px solid #403F4C; */
+    background-color: #ffffff;
+    color: #403F4C;
 }
 
 #word {
@@ -42,6 +73,7 @@ div {
 }
 
 #timer {
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -50,8 +82,18 @@ div {
     font-size: 50px;
 }
 
+#alphabet {
+    margin: 50px;
+}
+
 footer {
     text-align: center;
     padding-top: 30px;
     height: 15vh;
+}
+
+footer p {
+    background-color: white;
+    opacity: 70%;
+    padding: 10px;
 }
