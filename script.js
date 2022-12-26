@@ -1,6 +1,6 @@
 //1. Create a Pool of words ✔
 //  - Create a var with an array ✔
-var wordPool = ["salmon", "bear", "oven", "televison", "chewing", "drinking", "hiking", "christmas", "tabletop", "eventlistener", "hangman", "playing", "computer", "anaconda", "zebra", "snowboarding", "skiing", "mountain", "ocean", "forest", "concert", "handmade", "wife", "husband", "lion", "broccoli", "potatoes", "lemon", "steak", "hermit", "bathroom", "livingroom", "bathroom"];
+var wordPool = ["salmon", "bear", "oven", "televison", "chewing", "drinking", "hiking", "christmas", "tabletop", "sunflower", "hangman", "playing", "computer", "anaconda", "zebra", "snowboarding", "skiing", "mountain", "ocean", "forest", "concert", "handmade", "wife", "husband", "lion", "broccoli", "potatoes", "lemon", "steak", "hermit", "bathroom", "livingroom", "bathroom", "uranus", "saturn", "jupiter", "mars", "venus", "pluto", "aquarius", "scorpio", "virgo", "sagitarius", "piscies", "taurus", "leo", "gemini", "libra", "cancer", "capricorn", "aries", "stars", "planets", "moon", "galaxy", "purple", "pink", "halloween", "birthday", "spring", "summer", "winter", "automn" ];
 //2. Create a countdown ✔
 var timerEl = document.querySelector("#timer");
 var playEl = document.querySelector("#play");

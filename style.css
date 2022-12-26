@@ -8,28 +8,27 @@ body {
     background-image: url(assets/images/galaxy.png);
     background-repeat: no-repeat;
     background-color: #1B2432;
-    background-size: 110%;
+    background-size: 100%;
     background-position: center;
 }
 
 header {
-    color: #121420;
+    color: #403F4C;
     text-align: center;
     padding-top: 20px;
     height: 20vh;
-    /* background-image: url(assets/images/other-background.png);
-    background-position: bottom center; */
 }
 header h1 {
     padding: 10px;
     background-color: white;
     opacity: 70%;
+    color: #403F4C;
 }
 
 main {
     text-align: center;
     height: 65vh;
-    color: #121420;
+    color: #403F4C;
 }
 
 #play {
@@ -39,24 +38,23 @@ main {
 }
 
 #start {
+    border-color: #403F4C;
     border-radius: 10px;
     font-size: 40px;
     padding: 5px;
     margin: 30px;
     background-color: white;
     opacity: 70%;
-    color: #121420;
+    color: #403F4C;
 }
 
 section {
     opacity: 70%;
-    /* border-radius: 20px; */
     display: flex;
     justify-content: center;
     width: 100vw;
     height: 30vh;
     margin: auto;
-    /* border: 5px solid #403F4C; */
     background-color: #ffffff;
     color: #403F4C;
 }
@@ -73,17 +71,17 @@ div {
 }
 
 #timer {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 #letter {
-    margin-top: 50px;
+    margin-top: 1%;
     font-size: 50px;
 }
 
 #alphabet {
-    margin: 50px;
+    margin: 2%;
 }
 
 footer {
