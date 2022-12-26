@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding-top: 20px;
+    height: 20vh;
+}
+
+main {
+    text-align: center;
+    height: 65vh;
+}
+
+#start {
+    font-size: 20px;
+    padding: 5px;
+    margin: 30px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 40vh;
+    margin: auto;
+    border: 3px solid black;
+}
+
+#word {
+    width: 50%;
+    margin: auto;
+    font-size: 50px;
+}
+
+div {
+    width: 50%;
+    height: 10vh;
+}
+
+#timer {
+    margin-bottom: 10px;
+}
+
+#letter {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    height: 15vh;
+}
