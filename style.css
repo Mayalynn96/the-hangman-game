@@ -37,7 +37,7 @@ main {
     opacity: 70%;
 }
 
-#start {
+#start, #scoreReset {
     border-color: #403F4C;
     border-radius: 10px;
     font-size: 40px;
@@ -46,6 +46,12 @@ main {
     background-color: white;
     opacity: 70%;
     color: #403F4C;
+}
+
+#scoreReset {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
 }
 
 section {
