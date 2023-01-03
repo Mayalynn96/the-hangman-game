@@ -1,5 +1,4 @@
 //1. Create a Pool of words ✔
-//  - Create a var with an array ✔
 var wordPool = ["salmon", "bear", "oven", "televison", "chewing", "drinking", "hiking", "christmas", "tabletop", "sunflower", "hangman", "playing", "computer", "anaconda", "zebra", "snowboarding", "skiing", "mountain", "ocean", "forest", "concert", "handmade", "wife", "husband", "lion", "broccoli", "potatoes", "lemon", "steak", "hermit", "bathroom", "livingroom", "uranus", "saturn", "jupiter", "mars", "venus", "pluto", "aquarius", "scorpio", "virgo", "sagitarius", "piscies", "taurus", "leo", "gemini", "libra", "cancer", "capricorn", "aries", "stars", "planets", "moon", "galaxy", "purple", "pink", "halloween", "birthday", "spring", "summer", "winter", "automn"];
 
 var timerEl = document.querySelector("#timer");
@@ -9,6 +8,8 @@ var startBtn = document.querySelector("#start");
 var resetBtn = document.querySelector("#scoreReset");
 var letterEl = document.querySelector("#letter");
 var alphabetEl = document.querySelector("#alphabet")
+var winsEl = document.querySelector("#wins");
+var lossesEl = document.querySelector("#losses");
 var timerInterval;
 var timeTotal = 60;
 var timeLeft = timeTotal;
@@ -16,26 +17,20 @@ var randomWord;
 var maskedWord = [];
 var alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-//6. When a game is done ✔
-//  - scores will be kept ✔
 //  - scores will be saved localy ✔
+var wins = localStorage.getItem("wins") || 0;
+winsEl.textContent = "Your wins: " + wins;
 
-var wins = localStorage.getItem("wins");
-var winsEl = document.querySelector("#wins");
-winsEl.textContent = "Your wins: " + (localStorage.getItem("wins"));
-
-var losses = localStorage.getItem("losses");
-var lossesEl = document.querySelector("#losses");
-lossesEl.textContent = "Your losses: " + (localStorage.getItem("losses"));
+var losses = localStorage.getItem("losses") || 0;
+lossesEl.textContent = "Your losses: " + losses;
 
 //  - Have it reset the scores when the user presses the reset score button
 resetBtn.addEventListener("click", function() {
+    localStorage.clear();
     wins = 0;
-    localStorage.setItem("wins", wins);
-    winsEl.textContent = "Your wins: " + (localStorage.getItem("wins"));
+    winsEl.textContent = "Your wins: " + wins;
     losses = 0;
-    localStorage.setItem("losses", losses);
-    lossesEl.textContent = "Your losses: " + (localStorage.getItem("losses"));
+    lossesEl.textContent = "Your losses: " + losses;
 });
 
 //  - have it start when the user presses the start button ✔
@@ -69,7 +64,6 @@ startBtn.addEventListener("click", function() {
   });
 
 //2. Create a countdown ✔  
-// function to countdown 
 function countdown() {
     if(timeLeft === timeTotal-1) {
         timerInterval = setInterval(function() {
@@ -101,8 +95,7 @@ function countdown() {
     } else {
         return clearInterval(timerInterval);
     }
-}
-
+};
 
 //3. create a randomizer that gives us a random word ✔
 //  - turn each letter in the word to a undescore ✔
@@ -112,7 +105,7 @@ function randomizer() {
     for(var i = 0; i < randomWord.length; i++) {
         maskedWord.push("_");
     }
-}
+};
 
 //4. on keyEvent.key if the letter is correct ✔
 //  - have it fill in the letter pressed on the keyboard if it's in the word or remove 5 seconds from the timer if it's not✔
